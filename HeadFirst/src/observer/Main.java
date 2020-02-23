@@ -11,11 +11,12 @@ public class Main {
 		Observer o2 = new ConcreteObserver();
 		
 		Subject sub = new ConcreteSubject()
-			.addObserver(o)
+			.addObserver(o) 
 			.addObserver(o1)
 			.addObserver(o2);
 		
 		((ConcreteSubject) sub).setString("settest");
+		
 		
 //		System.err.println("End");
 		

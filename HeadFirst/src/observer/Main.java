@@ -1,5 +1,7 @@
 package observer;
 
+import java.util.stream.IntStream;
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -18,7 +20,6 @@ public class Main {
 		((ConcreteSubject) sub).setString("settest");
 		
 //		System.err.println("End");
-		
 
 	}
 }

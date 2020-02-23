@@ -17,9 +17,7 @@ public class Main {
 		
 		((ConcreteSubject) sub).setString("settest");
 		
-		
 //		System.err.println("End");
-		
 		
 
 	}

@@ -6,7 +6,6 @@ public class Main {
 
 	public static void main(String[] args) {
 		System.out.println("Observer Method Start");
-		// TODO 自動生成されたメソッド・スタブ
 		
 		Observer o = new ConcreteObserver();
 		Observer o1 = new ConcreteObserver();

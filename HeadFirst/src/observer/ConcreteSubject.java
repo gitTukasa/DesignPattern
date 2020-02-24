@@ -39,4 +39,9 @@ public class ConcreteSubject implements Subject{
 		}
 	}
 
+	@Override
+	public String toString() {
+		return getClass().getSimpleName(); 
+	}
+
 }

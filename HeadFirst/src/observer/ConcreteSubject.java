@@ -1,6 +1,5 @@
 package observer;
 
-import java.awt.List;
 import java.util.ArrayList;
 
 public class ConcreteSubject implements Subject{
@@ -13,7 +12,6 @@ public class ConcreteSubject implements Subject{
 	}
 	
 	ConcreteSubject() {
-		// TODO 自動生成されたコンストラクター・スタブ
 		observers = new ArrayList<>();
 	}
 
@@ -25,7 +23,6 @@ public class ConcreteSubject implements Subject{
 
 	@Override
 	public void removeObserver(Observer o) {
-		// TODO 自動生成されたメソッド・スタブ
 		if (observers.contains(o)) {
 			observers.remove(o);
 		}
@@ -33,7 +30,6 @@ public class ConcreteSubject implements Subject{
 
 	@Override
 	public void notifyObservers() {
-		// TODO 自動生成されたメソッド・スタブ
 		for(Observer o : observers) {
 			o.update((Subject)this);
 		}
@@ -41,7 +37,7 @@ public class ConcreteSubject implements Subject{
 
 	@Override
 	public String toString() {
-		return getClass().getSimpleName(); 
+		return this.str; 
 	}
 
 }

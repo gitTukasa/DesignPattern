@@ -1,14 +1,14 @@
 package decorator;
 
-public class Robot extends Product{
+class Robot extends Product{
 
 	@Override
-	public String getName() {
+	String getName() {
 		return "Robot";
 	}
 
 	@Override
-	public int getPrice() {
+	int getPrice() {
 		return 100;
 	}
 

@@ -7,16 +7,16 @@ package decorator;
  * @author tukasa
  *
  */
-public abstract class Decorator extends Product{
+abstract class Decorator extends Product{
 
 	/** コンポーネントをラップして使用する */
-	protected Product product;
+	Product product;
 	
 	/**
 	 * コンストラクタ
 	 * @param product
 	 */
-	protected Decorator(Product product) {
+	Decorator(Product product) {
 		this.product = product;
 	}
 }

@@ -1,18 +1,18 @@
 package decorator;
 
-public class Paint extends Decorator{
+class Paint extends Decorator{
 
-	public Paint(Product product) {
+	Paint(Product product) {
 		super(product);
 	}
 
 	@Override
-	public String getName() {
+	String getName() {
 		return product.getName() + " ,Painted";
 	}
 
 	@Override
-	public int getPrice() {
+	int getPrice() {
 		return product.getPrice() + 10;
 	}
 

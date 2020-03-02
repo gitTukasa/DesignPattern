@@ -19,6 +19,6 @@ package observer;
  * 
  * </pre>
  */
-public interface Observer {
+interface Observer {
 	void update(Subject sub);
 }

@@ -5,7 +5,7 @@ package observer;
  * 具体的な処理は具象クラスにて実装する。 
  * @author tukasa
  */
-public interface Subject {
+interface Subject {
 	/**
 	 * 具象化クラスにて実装 Observerの登録
 	 * @param o 登録するObserver

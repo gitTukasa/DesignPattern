@@ -8,7 +8,7 @@ package decorator;
  * @author tukasa
  *
  */
-public abstract class Product {
+abstract class Product {
 	
 	/**
 	 * <pre>
@@ -23,13 +23,13 @@ public abstract class Product {
 	 * @return String 名称 
 	 * </pre>
 	 */
-	public abstract String getName();
+	abstract String getName();
 	
 	/**
 	 * 継承したクラスで実装する　金額を返す
 	 * @return int 金額
 	 */
-	public abstract int getPrice();
+	abstract int getPrice();
 
 	@Override
 	public String toString() {

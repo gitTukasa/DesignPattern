@@ -3,20 +3,33 @@ import javax.swing.JFrame;
 public class Test {
 
 	public static void main(String[] args) {
-		// TODO 自動生成されたメソッド・スタブ
+		
+		JFrame testFrame = new TestFrame("Test Frame");
 		
 		Runnable run = () ->{
-			int count = 0;
-			while(count <= 50) {
-				System.out.println(count++);
+			final long FPS = 60;
+			long nowTime = System.currentTimeMillis();
+			long oldTime;
+			long sleepTime = 0;
+
+			while(true) {
+				oldTime = nowTime; 
+
+				testFrame.repaint();
+
+				nowTime = System.currentTimeMillis();
+				sleepTime = 1000/FPS - nowTime - oldTime;
+				if (sleepTime < 10) sleepTime = 10;
+				System.out.println(sleepTime);
+				
 				try{
-					Thread.sleep(500);
+					Thread.sleep(sleepTime);
+						
 				}catch(InterruptedException e) {
+
 				}
 			}
 		};
-		
-		JFrame myFrame = new MyFrame("MyFrame");
 
 		run.run();
 	}
